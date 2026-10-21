@@ -14,7 +14,7 @@ const gradients = [
 ];
 
 export default async function PresentationsPage() {
-  let presentations = [];
+  let presentations: any[] = [];
   
   try {
     presentations = await db.presentation.findMany({

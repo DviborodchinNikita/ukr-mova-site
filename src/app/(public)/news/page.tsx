@@ -4,7 +4,7 @@ import { db } from "@/lib/db";
 export const dynamic = 'force-dynamic';
 
 export default async function NewsPage() {
-  let news = [];
+  let news: any[] = [];
   
   try {
     news = await db.news.findMany({

@@ -4,7 +4,7 @@ import { db } from "@/lib/db";
 export const dynamic = 'force-dynamic';
 
 export default async function VideosPage() {
-  let videos = [];
+  let videos: any[] = [];
   
   try {
     videos = await db.video.findMany({
