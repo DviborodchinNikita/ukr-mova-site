@@ -29,7 +29,7 @@ export default function Header() {
               <Link href="/presentations" className="text-brown hover:text-caramel transition">Презентації</Link>
               <Link href="/news" className="text-brown hover:text-caramel transition">Новини</Link>
               
-              {session.user?.role === "ADMIN" && (
+              {(session.user as any)?.role === "ADMIN" && (
                 <Link href="/admin" className="text-caramel font-semibold hover:text-lightBrown transition">
                   Адмін-панель
                 </Link>
