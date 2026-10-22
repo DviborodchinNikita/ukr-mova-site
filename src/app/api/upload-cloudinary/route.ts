@@ -31,6 +31,7 @@ export async function POST(req: NextRequest) {
         {
           resource_type: "auto",
           folder: "ukr-mova-site",
+          access_mode: "public",
         },
         (error, result) => {
           if (error) reject(error);
